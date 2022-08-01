@@ -8,7 +8,7 @@
     
      :root {
         /* Declaring global CSS custom properties (variables) */
-        --border-color: #03A9F3;
+        --border-color: rgb(10, 92, 130);
     }
     
     div {
@@ -16,7 +16,7 @@
         width: 50vw;
         height: 50vh;
         margin: 200px auto;
-        border: 1px solid #03A9F3;
+        border: 10px solid #03A9F3;
         cursor: pointer;
     }
     /* Pseudo-elements */
@@ -25,27 +25,27 @@
     div::after {
         content: "Vinh Nguyen";
         position: absolute;
-        width: 100px;
+        width: 120px;
         height: 50px;
         transition: .3s ease-in-out;
     }
     
     div::before {
-        top: -5px;
-        left: -5px;
-        border-top: 1px solid var(--border-color);
-        border-left: 1px solid var(--border-color)
+        top: -40px;
+        left: -40px;
+        border-top: 10px solid var(--border-color);
+        border-left: 10px solid var(--border-color)
     }
     
     div::after {
-        right: -5px;
-        bottom: -5px;
-        border-right: 1px solid var(--border-color);
-        border-bottom: 1px solid var(--border-color);
+        right: -40px;
+        bottom: -40px;
+        border-right: 10px solid var(--border-color);
+        border-bottom: 10px solid var(--border-color);
     }
     
     div:hover::before,
     div:hover::after {
-        width: calc(100% + 9px);
-        height: calc(100% + 9px);
+        width: calc(100% + 69px);
+        height: calc(100% + 69px);
     }
