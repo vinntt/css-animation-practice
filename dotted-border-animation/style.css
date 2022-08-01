@@ -1,0 +1,71 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+div {
+    outline: 5px dashed rgb(10, 92, 130);
+    outline-offset: 50px;
+    /* position: relative; */
+    width: 20vw;
+    height: 30vh;
+    margin: 250px auto;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x, linear-gradient(90deg, #333 50%, transparent 0) repeat-x, linear-gradient(0deg, #333 50%, transparent 0) repeat-y, linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+    background-size: 8px 1px, 8px 1px, 1px 8px, 1px 8px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    cursor: pointer;
+}
+
+.gradient:hover {
+    animation: linearGradientMove .3s infinite linear;
+}
+
+.outline {
+    outline: 10px solid #333;
+    outline-offset: 50px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.outline:hover {
+    outline: 200px dashed transparent;
+    /* outline: 200px solid transparent; */
+    background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x, linear-gradient(90deg, #333 50%, transparent 0) repeat-x, linear-gradient(0deg, #333 50%, transparent 0) repeat-y, linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+    background-size: 8px 1px, 8px 1px, 1px 8px, 1px 8px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    animation: linearGradientMove .3s infinite linear;
+}
+
+@keyframes linearGradientMove {
+    100% {
+        background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+    }
+}
+
+
+/* div {
+    background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x, linear-gradient(90deg, #333 50%, transparent 0) repeat-x, linear-gradient(0deg, #333 50%, transparent 0) repeat-y, linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+    background-size: 10px 5px, 10px 5px, 5px 10px, 5px 10px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+} */
+
+
+/* div:hover {
+    animation: linearGradientMove .4s infinite linear;
+    outline: none;
+} */
+
+
+/* The @keyframes rule specifies the animation code. */
+
+
+/* @keyframes linearGradientMove {
+    100% {
+        background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+    }
+} */
